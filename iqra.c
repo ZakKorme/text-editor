@@ -160,7 +160,7 @@ void editorDrawRows(struct abuf *ab) {
         if (y == E.screenrows / 3) {
             char welcome[80];
             int welcomelen = snprintf(welcome, sizeof(welcome),
-                "Iqra edior -- version %s", IQRA_VERSION);
+                "Iqra editor -- version %s", IQRA_VERSION);
             if (welcomelen > E.screencols) welcomelen = E.screencols;
             int padding = (E.screencols - welcomelen) / 2;
             if (padding) {
